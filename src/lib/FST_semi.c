@@ -80,16 +80,12 @@
 int seanindex(int m,
 	      int l,
 	      int bw)
-{     
-  int bigL;
-
-  bigL = bw - 1;
+{
+  int x = m * (m + 1) / 2;
 
   if( m >= 0 )
-    return( m * ( bigL + 1 ) - ( ( m * (m - 1) ) /2 ) + ( l - m ) );
-  else
-    return( ( ( bigL * ( bigL + 3 ) ) /2 ) + 1 +
-	    ( ( bigL + m ) * ( bigL + m + 1 ) / 2 ) + ( l - abs( m ) ) );
+    return bw * m - x + l;
+  return bw * (bw + m) + x + l;
 }
 
 /************************************************************************/
