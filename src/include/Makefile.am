@@ -1,0 +1,1 @@
+SUBDIRS = s2kit

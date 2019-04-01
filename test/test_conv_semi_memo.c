@@ -94,9 +94,9 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "fftw3.h"
-#include "FST_semi_memo.h"
-#include "cospmls.h"
+#include <fftw3.h>
+#include <s2kit/FST_semi_memo.h>
+#include <s2kit/cospmls.h>
 
 int main(int argc, char **argv)
 {

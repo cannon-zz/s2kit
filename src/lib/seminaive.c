@@ -46,9 +46,9 @@
 #include <math.h>
 #include <stdio.h>
 #include <string.h>   /** for memcpy **/
-#include "fftw3.h"
+#include <fftw3.h>
 
-#include "cospmls.h"
+#include <s2kit/cospmls.h>
 
 
 /************************************************************************/

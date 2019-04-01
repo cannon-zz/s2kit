@@ -41,12 +41,7 @@
 #ifndef _FSTSEMI_MEMO_H
 #define _FSTSEMI_MEMO_H
 
-
-#define compmult(a,b,c,d,e,f) (e) = ((a)*(c))-((b)*(d)); (f) = ((a)*(d))+((b)*(c))
-
-extern int seanindex( int ,
-		      int ,
-		      int );
+#include <s2kit/FST_semi.h>
 
 extern void FST_semi_memo( double *, double *,
 			   double *, double *,
@@ -76,11 +71,6 @@ extern void FZT_semi_memo( double *, double *,
 			   int,
 			   fftw_plan *,
 			   double * ) ;
-
-extern void TransMult( double *, double *,
-		       double *, double *,
-		       double *, double *,
-		       int );
 
 extern void Conv2Sphere_semi_memo( double *, double *,
 				   double *, double *,

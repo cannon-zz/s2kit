@@ -55,12 +55,12 @@
 #include <string.h>   /* to declare memcpy */
 #include <time.h>
 
-#include "fftw3.h"
-#include "makeweights.h"
-#include "cospmls.h"
-#include "primitive.h"
-#include "seminaive.h"
-#include "csecond.h"
+#include <fftw3.h>
+#include <s2kit/makeweights.h>
+#include <s2kit/cospmls.h>
+#include <s2kit/primitive.h>
+#include <s2kit/seminaive.h>
+#include <csecond.h>
 
 #define mymax(a, b) ((a) > (b) ? (a) : (b))
 

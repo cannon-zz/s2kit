@@ -43,9 +43,9 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-#include "fftw3.h"
-#include "primitive.h"
-#include "pmls.h"
+#include <fftw3.h>
+#include <s2kit/primitive.h>
+#include <s2kit/pmls.h>
 
 
 /************************************************************************/

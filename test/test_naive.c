@@ -60,10 +60,10 @@
 #include <math.h>
 #include <time.h>
 
-#include "pmls.h"
-#include "makeweights.h"
-#include "naive_synthesis.h"
-#include "csecond.h"
+#include <s2kit/pmls.h>
+#include <s2kit/makeweights.h>
+#include <s2kit/naive_synthesis.h>
+#include <csecond.h>
 
 #define mymax(a, b) ((a) > (b) ? (a) : (b))
 

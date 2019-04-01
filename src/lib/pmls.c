@@ -44,7 +44,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-#include "primitive.h"
+#include <s2kit/primitive.h>
 
 /************************************************************************/
 /* generate all of the Pmls for a specified value of m.  
