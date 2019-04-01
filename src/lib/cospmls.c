@@ -721,7 +721,7 @@ double **SemiNaive_Naive_Pml_Table(int bw,
   double **seminaive_naive_table;
   int  lastspace;
 
-  seminaive_naive_table = (double **) malloc(sizeof(double) * (bw+1));
+  seminaive_naive_table = (double **) malloc(sizeof(*seminaive_naive_table) * (bw+1));
 
   seminaive_naive_table[0] = resultspace;
 
