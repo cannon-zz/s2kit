@@ -41,6 +41,7 @@
 #ifndef _FSTSEMI_FLY_H
 #define _FSTSEMI_FLY_H
 
+#include <fftw3.h>
 #include <s2kit/FST_semi.h>
 
 extern void FST_semi_fly( double *, double *,
