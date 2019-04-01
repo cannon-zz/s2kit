@@ -766,7 +766,6 @@ void Conv2Sphere_semi_fly(double *rdata, double *idata,
 			  int bw,
 			  double *workspace)
 {
-  int size ;
   double *frres, *fires, *filtrres, *filtires, *trres, *tires;
   double *scratchpad;
   int rank, howmany_rank ;
@@ -778,8 +777,6 @@ void Conv2Sphere_semi_fly(double *rdata, double *idata,
 
   /* inverse transform stuff */
   fftw_plan idctPlan, ifftPlan ;
-
-  size = 2*bw ;
 
   /* assign space */
   frres = workspace ;                 /* needs (bw*bw) */

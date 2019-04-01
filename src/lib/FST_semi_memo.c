@@ -784,7 +784,6 @@ void Conv2Sphere_semi_memo(double *rdata, double *idata,
 			   int bw,
 			   double *workspace)
 {
-  int size, spharmonic_bound ;
   int legendreSize, cutoff ;
   double *frres, *fires, *filtrres, *filtires, *trres, *tires;
   double **spharmonic_pml_table, **transpose_spharmonic_pml_table;
@@ -802,14 +801,11 @@ void Conv2Sphere_semi_memo(double *rdata, double *idata,
   /* inverse transform stuff */
   fftw_plan idctPlan, ifftPlan ;
 
-  size =2*bw ;
   cutoff = bw ;
   legendreSize = Reduced_Naive_TableSize(bw,cutoff) +
     Reduced_SpharmonicTableSize(bw,cutoff) ;
 
   /* assign space */
-
-  spharmonic_bound = legendreSize ;
 
   spharmonic_result_space = workspace;          /* needs legendreSize */
 

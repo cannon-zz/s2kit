@@ -272,12 +272,10 @@ void SemiNaiveReduced(double *data,
   int i, j, n;
   double result0, result1, result2, result3;
   double fudge ;
-  double d_bw;
   int toggle ;
   double *pml_ptr, *weighted_data, *cos_data ;
 
   n = 2*bw;
-  d_bw = (double) bw;
 
   weighted_data = workspace ;
   cos_data = weighted_data + (2*bw) ;
