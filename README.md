@@ -10,4 +10,4 @@ The original README file stated
 >
 > s2kit_fx.pdf
 
-which is now in doc/
+which is now in doc/.  In 2025, I migrated the project to github from git.ligo.org.
